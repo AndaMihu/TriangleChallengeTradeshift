@@ -24,15 +24,6 @@ function validateForm()
     }
 }
 
-function getResult()
-{
-    var ab = document.triangleForm.AB.value;
-    var bc = document.triangleForm.BC.value;
-    var ca = document.triangleForm.CA.value;
-
-    document.querySelector('#textBox').innerHTML = getTriangleType(ab,bc,ca);
-
-}
 
 function getTriangleType(ab, bc, ca)
 {
@@ -52,4 +43,14 @@ function getTriangleType(ab, bc, ca)
     {
         return "Scalene triangle";
     }
+}
+
+function getResult()
+{
+    var ab = document.triangleForm.AB.value;
+    var bc = document.triangleForm.BC.value;
+    var ca = document.triangleForm.CA.value;
+
+    document.querySelector('#textBox').innerHTML = getTriangleType(ab,bc,ca);
+
 }
